@@ -4,9 +4,15 @@
 
 ```sh
 brew tap vvrnv/tap
-brew install <FORMULA>
+brew install <formula>
 ```
 or
 ```sh
 brew install vvrnv/tap/<formula>
 ```
+
+# formulae
+
+| Repository | Formula | Description |
+| ---------- | ------- | ----------- |
+| [gossl](https://github.com/vvrnv/gossl)                    | [formula](Formula/gossl.rb)        | simple CLI app for checking SSL certificates |

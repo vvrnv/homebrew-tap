@@ -1,4 +1,6 @@
-# homebrew-tap for my projects
+# homebrew-tap
+
+homebrew tap repo for my projects
 
 # installation
 

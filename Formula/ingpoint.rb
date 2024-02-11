@@ -5,21 +5,21 @@
 class Ingpoint < Formula
   desc "app to get all unique ingress hosts for current kubernetes context"
   homepage "https://vvrnv.dev"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/vvrnv/ingpoint/releases/download/v0.2.0/ingpoint_0.2.0_darwin_arm64.tar.gz"
-      sha256 "9a853ff99567d99ff3db04353a380fa6b020a6cc4e8d388593a0f448bec0d4f7"
+      url "https://github.com/vvrnv/ingpoint/releases/download/v0.2.1/ingpoint_0.2.1_darwin_arm64.tar.gz"
+      sha256 "715a181a4f3bb412ef17158100b91e96ad6055a13a88a925f5eccc6b45b6c720"
 
       def install
         bin.install "ingpoint"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vvrnv/ingpoint/releases/download/v0.2.0/ingpoint_0.2.0_darwin_amd64.tar.gz"
-      sha256 "2f64c0d6c634eba75cb8ca29021c83730c629ac8828b7164dcde3ec4a4767ebd"
+      url "https://github.com/vvrnv/ingpoint/releases/download/v0.2.1/ingpoint_0.2.1_darwin_amd64.tar.gz"
+      sha256 "a9561fbd84fd5da5f7137a8b4b9ffbfb16e4241eceedd895433a63509f590743"
 
       def install
         bin.install "ingpoint"
@@ -29,16 +29,16 @@ class Ingpoint < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vvrnv/ingpoint/releases/download/v0.2.0/ingpoint_0.2.0_linux_arm64.tar.gz"
-      sha256 "dd0575c7ade78603bf66f5093634f17e7d56a4237f31d13da00207d4e9089126"
+      url "https://github.com/vvrnv/ingpoint/releases/download/v0.2.1/ingpoint_0.2.1_linux_arm64.tar.gz"
+      sha256 "919fce8bee9e16ec099ec5aa40a8a5317d5fd2de5a6757e72eebd0afee173d12"
 
       def install
         bin.install "ingpoint"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vvrnv/ingpoint/releases/download/v0.2.0/ingpoint_0.2.0_linux_amd64.tar.gz"
-      sha256 "a0405e4ae4b1393d3aaba973dc8bb8214320d98a9ec503c420c0851b878b01bd"
+      url "https://github.com/vvrnv/ingpoint/releases/download/v0.2.1/ingpoint_0.2.1_linux_amd64.tar.gz"
+      sha256 "31c8e7118bb11a69c5450d3e5d087325ff16a6850cfee2900f4a5befefa0c3fb"
 
       def install
         bin.install "ingpoint"

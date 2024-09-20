@@ -5,21 +5,21 @@
 class Kctxsync < Formula
   desc "A command-line tool to sync certificate and key data from a remote Kubernetes cluster's kubeconfig to your local kubeconfig."
   homepage "https://vvrnv.dev"
-  version "0.2.1"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/vvrnv/kctxsync/releases/download/v0.2.1/kctxsync_0.2.1_darwin_amd64.tar.gz"
-      sha256 "1e97aed2b26e8ec3bae6ebd98c2623980f0267ab91c7bdd36f58359ddf809fc4"
+      url "https://github.com/vvrnv/kctxsync/releases/download/v0.3.0/kctxsync_0.3.0_darwin_amd64.tar.gz"
+      sha256 "9e7e6e4b7d4412f6fcb0495ca07e8b94318a4b4495302a06926d5c10933e5f3e"
 
       def install
         bin.install "kctxsync"
       end
     end
     on_arm do
-      url "https://github.com/vvrnv/kctxsync/releases/download/v0.2.1/kctxsync_0.2.1_darwin_arm64.tar.gz"
-      sha256 "f51b70d8b3592468dfb74d88f79bad5ffa5113a6e1eeca92b03bb8c002cbcf14"
+      url "https://github.com/vvrnv/kctxsync/releases/download/v0.3.0/kctxsync_0.3.0_darwin_arm64.tar.gz"
+      sha256 "36cc738c632357e362687ca4ce0238479fd50d6816c96d90e7a6d3631f6972bf"
 
       def install
         bin.install "kctxsync"
@@ -30,8 +30,8 @@ class Kctxsync < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/vvrnv/kctxsync/releases/download/v0.2.1/kctxsync_0.2.1_linux_amd64.tar.gz"
-        sha256 "44d0ee7b1d1fc94c2ac8566851fdc46e7bbb755563fcca2264ea55a0835497f1"
+        url "https://github.com/vvrnv/kctxsync/releases/download/v0.3.0/kctxsync_0.3.0_linux_amd64.tar.gz"
+        sha256 "6bfbe02b4c73d559a2c6243c482b39d32e49901135dd9078b5f1299e36855690"
 
         def install
           bin.install "kctxsync"
@@ -40,8 +40,8 @@ class Kctxsync < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/vvrnv/kctxsync/releases/download/v0.2.1/kctxsync_0.2.1_linux_arm64.tar.gz"
-        sha256 "d65ac3cb733900451cd91a1f27275ae625444e151a273745ae24df19b5227f23"
+        url "https://github.com/vvrnv/kctxsync/releases/download/v0.3.0/kctxsync_0.3.0_linux_arm64.tar.gz"
+        sha256 "3fd05f5d67628516cd02009983d79298ad1ec0a32109bd87e2132d12ddfdaf93"
 
         def install
           bin.install "kctxsync"
